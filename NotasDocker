@@ -1,0 +1,32 @@
+# 1. Descargar imagen de docker hub
+docker pull ubuntu
+
+# 2.- Iniciar contenedor a partir de una imagen
+docker run ubuntu
+
+# 3.- Ver las imagenes 
+docker images 
+
+# 4.- Ver los contenedores corriendo
+docker ps
+
+# 5.- Ver los contenedores + inactivos
+docker ps -a
+
+# 6.- Detener contenedor
+docker stop <CONTAINER ID>
+
+# 7.- Iniciar contenedor inactivos
+docker start <CONTAINER ID>
+
+# 8.- Ver logs 
+docker logs <CONTAINER ID>
+
+# 9.- Ver logs online
+docker logs -f <CONTAINER ID>
+
+# 10.- Ejecutar cambios sobre un contenedor
+docker exec -it <CONTAINER ID> sh
+
+# 11.- Ejecutar en background
+docker run -d <IMAGE>

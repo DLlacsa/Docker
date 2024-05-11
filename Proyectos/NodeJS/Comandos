@@ -1,0 +1,14 @@
+# Construir imagen
+docker build -t getting-started .
+# Ejecutar imagen
+docker run getting-started
+# Redireccionamiento de puerto
+docker run -p 3000:3000 getting-started
+# Ejecutar en segundo plano
+docker run -dp 3000:3000 getting-started
+# Ejecutar en segundo plano
+docker run -dp 3000:3000 getting-started
+# Crear volumen -v local:remote
+docker run -v etc:/etc/todos -dp 3000:3000 getting-started
+# Crear volumen -v local:remote
+docker run -v etc:/etc/todos -v src:/app/src -dp 3000:3000 getting-started
