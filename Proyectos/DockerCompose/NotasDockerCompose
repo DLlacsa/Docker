@@ -1,0 +1,4 @@
+# Ejecutar docker compose 
+docker-compose up -d
+# Detener docker compose
+docker-compose down 
