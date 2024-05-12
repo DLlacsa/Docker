@@ -12,3 +12,10 @@ docker run -dp 3000:3000 getting-started
 docker run -v etc:/etc/todos -dp 3000:3000 getting-started
 # Crear volumen -v local:remote
 docker run -v etc:/etc/todos -v src:/app/src -dp 3000:3000 getting-started
+# Reescribir imagen
+docker build -t getting-started:v2 .
+# Subir imagen a internet
+#docker tag <IMAGE ID> <USUARIO>/<NOMBRE>:<TAG>
+docker tag 270ac470f8bb dllacsa/getting-started:v2
+#docker <USUARIO>/<NOMBRE>:<TAG>
+docker push dllacsa/getting-started:v2
