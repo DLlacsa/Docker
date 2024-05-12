@@ -30,3 +30,6 @@ docker exec -it <CONTAINER ID> sh
 
 # 11.- Ejecutar en background
 docker run -d <IMAGE>
+
+# 12.- Borrar todos los contenedores detenidos
+docker rm $(docker ps -qa)
